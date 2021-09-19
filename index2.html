@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<style>
+		.f1{
+			display: inline-block;
+		}
+		.f2{
+			 display: inline;
+		}
+		.f3{
+			width: 544px;
+		}
+		.vis{
+			visibility: hidden;
+			display: inline;
+		}
+		p{
+			width: 100px;
+		}
+		.f5{
+			visibility: hidden;
+		}
+		@media screen and (max-width:900px) {
+			.prd{
+				background-color: rgb(145, 145, 145);
+			}
+			.vis{
+				visibility: visible;
+				display: block;
+			}
+			input{
+				width: 60%;
+			}
+			.f3{
+				width: 60%;
+			}
+			.f4{
+				visibility: hidden;
+			}
+			.f5{
+				visibility: visible;
+			}
+			.btn{
+				width: 70%;
+				height: 30px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<form>
+			<select class="f4">
+				<option value="en">en</option>
+				<option value="ru">ru</option>
+				<option value="ar">ar</option>
+			</select>
+			<div class="f5">
+				<button value="en" class="prd">en</button>
+				<button value="ru">ru</button>
+				<button value="ar">ar</button>
+			</div>
+			<h1>Form title</h1>
+			<div>
+				<p class="f1">
+					first name*:
+				</p>
+				<input type="text" class="f2" size="29">
+				<div class="vis">
+				</div>
+				<p class="f1">
+					last name*:
+				</p>
+				<input type="text" class="f2" size="29">
+			</div>
+			<div>
+				<p class="f1">
+					email*:
+				</p>
+				<input type="text" class="f2" size="80">
+			</div>
+			<div>
+				<p class="f1">
+					company:
+				</p>
+				<input type="text" class="f2" size="80">
+			</div>
+			<div>
+				<p class="f1">
+					city*:
+				</p>
+				<input type="text" class="f2" size="80">
+			</div>
+			<div>
+				<p class="f1">
+					message*:
+				</p>
+				<textarea type="text" class="f2 f3">
+				</textarea>
+			</div>
+			<button class="btn">
+				Send
+			</button>
+		</form>
+	</center>
+</body>
+</html>
